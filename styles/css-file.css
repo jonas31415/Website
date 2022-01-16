@@ -1,92 +1,180 @@
-/* Handle basic element styling */
-
-
-/* -------------------------------------------------------------------------------------------- */
-
-html {
-    background-color: rgb(200, 200, 200);
-    /*Hintergrundfarbe der website ohne body*/
-    font-size: 20px;
-    font-family: 'Open Sans', sans-serif;
+        /* Handle basic element styling */
+        /* -------------------------------------------------------------------------------------------- */
+        
+        html {
+            background-color: rgb(200, 200, 200);
+            /*Hintergrundfarbe der website ohne body*/
+            font-size: 20px;
+            font-family: 'Open Sans', sans-serif;
+        }
+        
+        body {
+            width: auto;
+            /*Seitenbreite wird automatisch an breite von browserfenster angepasst*/
+            margin: 0 auto;
+            background-color: #CFDBD5;
+            padding: 0 20px 20px 20px;
+            border: 2px solid black;
+        }
+        /*Überschriften*/
+        
+        h1 {
+            font-size: 60px;
+            text-align: center;
+            margin: 0;
+            /*Abstand am Kopf der Website*/
+            padding: 20px 0;
+            color: #065143;
+            /*Farbe der Überschrift*/
+            /*text-shadow: 3px 3px 1px rgb(46, 45, 45);*/
+        }
+        
+        h2 {
+            color: #065143;
+            font-weight: bolder;
+            /*For setting text in bold*/
+        }
+        
+        h3 {
+            color: #065143;
+            font-weight: bold;
+            /*bold is already the preset for headings*/
+        }
+        
+        p,
+        li {
+            font-size: 20px;
+            line-height: 2;
+            letter-spacing: 1px;
+            color: #0F0A0A;
+        }
+        
+        ul {
+            background: #B9CAC2;
+            padding: 10px;
+        }
+        
+        li {
+            margin-left: 20px;
+        }
+        /*Darstellung von Bildern*/
+        
+        img {
+            display: block;
+            /*Konvertiert inline element zu block element*/
+            margin: 0 auto;
+            width: 40%;
+            border: 2px solid #0F0A0A;
+        }
+        /*Styling links*/
+        
+        a:link {
+            color: #0F0A0A;
+            /*color of unvisited link*/
+        }
+        
+        a:visited {
+            color: #0F0A0A;
+            /*color of visited link*/
+        }
+        
+        a:hover {
+            text-decoration: none;
+            /*when hovering over element underline is removed*/
+        }
+        
+        .navmenue {
+            position: absolute;
+            z-index: 1;
+            top: 0;
+            right: 10%;
+        }
+        /*Styling sidenavigation bar*/
+        /*
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #065143;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
 }
 
-body {
-    width: auto;
-    /*Seitenbreite wird automatisch an breite von browserfenster angepasst*/
-    margin: 0 auto;
-    background-color: #CFDBD5;
-    padding: 0 20px 20px 20px;
-    border: 2px solid black;
-}
-
-
-/*Überschriften*/
-
-h1 {
-    font-size: 60px;
-    text-align: center;
-    margin: 0;
-    /*Abstand am Kopf der Website*/
-    padding: 20px 0;
-    color: #065143;
-    /*Farbe der Überschrift*/
-    /*text-shadow: 3px 3px 1px rgb(46, 45, 45);*/
-}
-
-h2 {
-    color: #065143;
-    font-weight: bolder;
-    /*For setting text in bold*/
-}
-
-h3 {
-    color: #065143;
-    font-weight: bold;
-    /*bold is already the preset for headings*/
-}
-
-p,
-li {
-    font-size: 20px;
-    line-height: 2;
-    letter-spacing: 1px;
-    color: #0F0A0A;
-}
-
-ul {
-    background: #B9CAC2;
-    padding: 10px;
-}
-
-li {
-    margin-left: 20px;
-}
-
-img {
-    display: block;
-    /*Konvertiert inline element zu block element*/
-    margin: 0 auto;
-}
-
-
-/*Darstellung von Bildern*/
-
-
-/*Styling links*/
-
-a:link {
-    color: #0F0A0A;
-    /*color of unvisited link*/
-}
-
-a:visited {
-    color: #0F0A0A;
-    /*color of visited link*/
-}
-
-a:hover {
+.sidenav a {
+    padding: 8px 8px 8px 32px;
     text-decoration: none;
+    font-size: 25px;
+    color: #CFDBD5;
+    display: block;
+    transition: 0.3s;
 }
 
+.sidenav a:hover {
+    color: #CFDBD5;
+}
 
-/*when hovering over element underline is removed*/
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}*/
+        /*Slide out menü*/
+        
+        .overlay {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #065143;
+            background-color: rgba(6, 81, 67, 0.75);
+            overflow-x: hidden;
+            transition: 0.5s;
+        }
+        
+        .overlay-content {
+            position: relative;
+            top: 25%;
+            width: 100%;
+            text-align: center;
+            margin-top: 30px;
+        }
+        
+        .overlay a {
+            padding: 8px;
+            text-decoration: none;
+            font-size: 36px;
+            color: #CFDBD5;
+            display: block;
+            transition: 0.3s;
+        }
+        
+        .overlay .closebtn {
+            position: absolute;
+            top: 20px;
+            right: 45px;
+            font-size: 60px;
+            color: #CFDBD5;
+        }
+        
+        @media screen and (max-height: 450px) {
+            .overlay a {
+                font-size: 20px
+            }
+            .overlay .closebtn {
+                font-size: 40px;
+                top: 15px;
+                right: 35px;
+            }
+        }
+        
+        .menuebutton {
+            color: #0F0A0A;
+        }

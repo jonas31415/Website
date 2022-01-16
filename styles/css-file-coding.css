@@ -55,3 +55,40 @@ a:visited {
 a:hover {
     text-decoration: none;
 }
+
+
+/*Styling sidenavigation bar*/
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #065143;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #CFDBD5;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #CFDBD5;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}

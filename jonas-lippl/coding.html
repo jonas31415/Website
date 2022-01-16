@@ -6,14 +6,22 @@
     <meta name="author" content="Jonas Lippl">
     <meta name="description" content="This is my personal homepage to introduce myselfe.">
     <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="../styles/css-file-coding.css">
-    <script src="scripts/js-file-coding.js" defer></script>
+    <link rel="stylesheet" href="../styles/css-file.css">
+    <script src="../scripts/js-file.js" defer></script>
     <title>Jonas Lippl - Programmier-Projekte</title>
 </head>
 
 <body>
-    <p><a href="../index.html">Zurück</a> zur Hauptseite.</p>
-    <!--Use ../ to move upwards in folders-->
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a href="../index.html">Startseite</a>
+            <a href="schreinern.html">Holz-Projekte</a>
+            <a href="coding.html">Programmier-Projekte</a>
+        </div>
+    </div>
+
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menü</span>
 
     <h1>Programmier-Projekte</h1>
 
@@ -25,4 +33,12 @@
     </p>
 
     <h2>Hosting dieser Website</h2>
-    <p>Für diese Website hab ich die Domain ohne Hosting bei Strato AG gekauft, da ich sie selber auf meinem RaspberryPi hosten will. Dazu installiert man den Apache2-Webserver mit de</p>
+    <p>Für diese Website hab ich die Domain ohne Hosting bei Strato AG gekauft, da ich sie selber auf meinem RaspberryPi hosten will. Dazu installiert man zunächst mit dem Raspberry Pi Imager das Betriebssystem Raspberry Pi OS auf der entsprechenden SD-Karte.
+        Anschließend kann man im Terminal des Raspis die Komandos</p>
+
+    <p>verwenden um den Apache2 Webserver zu installieren. Anschließend ersetzt man im Verzeichnis \var\www\ die Index.html Datei mit den entsprechenden Dateien der Website. Um aus dem Internet darauf zugreifen zu können muss man nun noch Dynamische DNS
+        einrichten, damit der Computer immer unter der selben Adresse erreichbar ist, auch wenn sich seinen IP-Adresse regelmäßig ändert.</p>
+
+</body>
+
+</html>
