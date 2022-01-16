@@ -1,0 +1,92 @@
+/* Handle basic element styling */
+
+
+/* -------------------------------------------------------------------------------------------- */
+
+html {
+    background-color: rgb(200, 200, 200);
+    /*Hintergrundfarbe der website ohne body*/
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    width: auto;
+    /*Seitenbreite wird automatisch an breite von browserfenster angepasst*/
+    margin: 0 auto;
+    background-color: #CFDBD5;
+    padding: 0 20px 20px 20px;
+    border: 2px solid black;
+}
+
+
+/*Überschriften*/
+
+h1 {
+    font-size: 60px;
+    text-align: center;
+    margin: 0;
+    /*Abstand am Kopf der Website*/
+    padding: 20px 0;
+    color: #065143;
+    /*Farbe der Überschrift*/
+    /*text-shadow: 3px 3px 1px rgb(46, 45, 45);*/
+}
+
+h2 {
+    color: #065143;
+    font-weight: bolder;
+    /*For setting text in bold*/
+}
+
+h3 {
+    color: #065143;
+    font-weight: bold;
+    /*bold is already the preset for headings*/
+}
+
+p,
+li {
+    font-size: 20px;
+    line-height: 2;
+    letter-spacing: 1px;
+    color: #0F0A0A;
+}
+
+ul {
+    background: #B9CAC2;
+    padding: 10px;
+}
+
+li {
+    margin-left: 20px;
+}
+
+img {
+    display: block;
+    /*Konvertiert inline element zu block element*/
+    margin: 0 auto;
+}
+
+
+/*Darstellung von Bildern*/
+
+
+/*Styling links*/
+
+a:link {
+    color: #0F0A0A;
+    /*color of unvisited link*/
+}
+
+a:visited {
+    color: #0F0A0A;
+    /*color of visited link*/
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+
+/*when hovering over element underline is removed*/
