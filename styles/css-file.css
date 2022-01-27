@@ -58,13 +58,37 @@
             margin-left: 20px;
         }
         /*Darstellung von Bildern*/
+        /*image containers to put pictures side by side*/
+        
+        * {
+            box-sizing: border-box;
+        }
         
         img {
             display: block;
-            /*Konvertiert inline element zu block element*/
-            margin: 0 auto;
-            width: 40%;
-            border: 2px solid #0F0A0A;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .column2 {
+            float: left;
+            width: 50%;
+            padding: 5px;
+            border: 1px;
+        }
+        
+        .column3 {
+            float: left;
+            width: 33%;
+            padding: 5px;
+            border: 1px;
+        }
+        /* Clear floats after image containers */
+        
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
         }
         /*Styling links*/
         

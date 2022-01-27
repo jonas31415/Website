@@ -28,21 +28,53 @@
     <p>Auf dieser Seite möchte ich meine Programmier-Projekte vorstellen. Die Codes dazu werde ich auf Github verlinken.</p>
 
     <h2>Code für diese Website</h2>
-    <p>Diese Website habe ich als Übung zum lernen von HTML und CSS erstellt. In Zukunft möchte ich sie noch mit weiteren Features erweitern. Dazu habe ich angefangen JavaScript auf Free-Code-Camp zu lernen. Die Codes für die Website gibt es auf <a href=""
-            title="Code für die Website">GitHub</a>. Ich versuche die Veränderungen regelmäßig zu aktualisieren.
+    <p>Diese Website habe ich als Übung zum lernen von HTML und CSS erstellt. In Zukunft möchte ich sie noch mit weiteren Features erweitern. Dazu habe ich angefangen JavaScript auf <a href="https://www.freecodecamp.org/">Free-Code-Camp</a> zu lernen. Die
+        Codes für die Website gibt es auf
+        <a href="https://github.com/jonas31415/Website" title="Code für die Website">GitHub</a>. Ich versuche die Veränderungen regelmäßig zu aktualisieren.
     </p>
 
     <h2>Hosting dieser Website</h2>
     <p>Für diese Website hab ich die Domain ohne Hosting bei Strato AG gekauft, da ich sie selber auf meinem RaspberryPi hosten will. Dazu installiert man zunächst mit dem Raspberry Pi Imager das Betriebssystem Raspberry Pi OS auf der entsprechenden SD-Karte.
-        Anschließend kann man im Terminal des Raspis die Komandos</p>
-
-    <p>verwenden um den Apache2 Webserver zu installieren. Anschließend ersetzt man im Verzeichnis \var\www\ die Index.html Datei mit den entsprechenden Dateien der Website. Um aus dem Internet darauf zugreifen zu können muss man nun noch Dynamische DNS
-        einrichten, damit der Computer immer unter der selben Adresse erreichbar ist, auch wenn sich seinen IP-Adresse regelmäßig ändert.</p>
+        Anschließend kann man im Terminal des Raspberrys den Apache2 Webserver installieren. Anschließend ersetzt man im Verzeichnis /var/www/html die Index.html Datei mit den entsprechenden Dateien der Website. Um aus dem Internet darauf zugreifen zu
+        können muss man nun noch Dynamische DNS einrichten, damit der Computer immer unter der selben Adresse erreichbar ist, auch wenn sich seinen IP-Adresse regelmäßig ändert.</p>
 
     <h2>Berechnen von Spacing-Ratios und Graphische Darstellung</h2>
     <p>In meiner Bachelorarbeit hab ich das Verhalten verschiedener Klassen von nicht-Hermiteschen Zufallsmatrizen untersucht. Dazu habe ich unter anderem die Eigenwerte berechnet und das Verhältnis aus nächst gelegenem Eigenwert zum übernächsten Eigenwert
-        berechnet.
+        bestimmt. Diese Verhältnisse werden auch als Spacing-Ratio bezeichnet. Diese Verhältnisse kann man mit Hilfe einer gaußschen Kerndichteschätzung graphisch darstellen. Dazu wird die Matplotlib Bibliothek von Python genutzt. <a href="https://github.com/jonas31415/Spacing-Ratios-of-non-hermitian-random-matrices"
+            title="Code für Spacing-Ratios">Hier</a> befindet sich der entsprechende Code.
     </p>
+    <div class="row">
+        <div class="column3">
+            <img src="../images/ginibre_sr.png" alt="Spacing-Ratios des Ginibre-Ensembles">
+        </div>
+        <div class="column3">
+            <img src="../images/AI_sr.png" alt="Spacing-Ratios des AI^dagger-Ensembles">
+        </div>
+        <div class="column3">
+            <img src="../images/AII_sr.png" alt="Spacing-Ratios des AII^dagger-Ensembles">
+        </div>
+    </div>
+    <div class="row">
+        <div class="column2">
+            <img src="../images/r(4000).png" alt="Radial-Verteilung der Spacing-Ratios">
+        </div>
+        <div class="column2">
+            <img src="../images/theta(4000).png" alt="Winkel-Verteilung der Spacing-Ratios">
+        </div>
+    </div>
+
+    <h2>John Conway's Game of Life</h2>
+    <p>Das Spiel des Lebens wurde vom Mathematiker John Conway entworfen. Es basiert auf zellulären Automaten, die hier durch die einzelnen Felder des Spielfeldes dargestellt werde. Jede Zelle kann genau zwei Zustände annehmen, nämlich tot oder lebendig.
+        Die Spielregeln sind:
+        <ul>
+            <li>Eine tote Zelle mit genau drei lebenden Nachbarn wird in der nächsten Generation wiedergeboren.</li>
+            <li>Eine lebende Zelle mit weniger als drei lebenden Nachbarn stirbt in der Folgegeneration an Einsamkeit.</li>
+            <li>Eine lebende Zelle mit zwei oder drei lebenden Nachbarn bleibt weiterhin am Leben.</li>
+            <li>Eine lebende Zelle mit mehr als drei lebenden Nachbarn stirbt in der Folgegeneration an Überbevölkerung.</li>
+        </ul>
+        Der Code für das Spiel mit tkinter GUI (graphical user interface) ist auf <a href="https://github.com/jonas31415/Game-of-Life" title="Code für Game of Life">GitHub</a> zu finden.
+    </p>
+    <img class="gameoflife" src="../images/gameoflife.PNG" alt="GameOfLife" style="width: 30%">
 </body>
 
 </html>
