@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="author" content="Jonas Lippl">
     <meta name="description" content="This is my personal homepage to introduce myselfe.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../styles/css-file.css">
     <script src="../scripts/js-file.js" defer></script>
@@ -12,6 +13,7 @@
 </head>
 
 <body>
+    <div class="spacer layer1"></div>
     <div id="myNav" class="overlay">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <div class="overlay-content">
@@ -27,6 +29,9 @@
 
     <p>Auf dieser Seite möchte ich meine Programmier-Projekte vorstellen. Die Codes dazu werde ich auf Github verlinken.</p>
 
+    <div class="spacer layer2"></div>
+    <div class="spacer layer1"></div>
+
     <h2>Code für diese Website</h2>
     <p>Diese Website habe ich als Übung zum lernen von HTML und CSS erstellt. In Zukunft möchte ich sie noch mit weiteren Features erweitern. Dazu habe ich angefangen JavaScript auf <a href="https://www.freecodecamp.org/">Free-Code-Camp</a> zu lernen. Die
         Codes für die Website gibt es auf
@@ -37,6 +42,9 @@
     <p>Für diese Website hab ich die Domain ohne Hosting bei Strato AG gekauft, da ich sie selber auf meinem RaspberryPi hosten will. Dazu installiert man zunächst mit dem Raspberry Pi Imager das Betriebssystem Raspberry Pi OS auf der entsprechenden SD-Karte.
         Anschließend kann man im Terminal des Raspberrys den Apache2 Webserver installieren. Anschließend ersetzt man im Verzeichnis /var/www/html die Index.html Datei mit den entsprechenden Dateien der Website. Um aus dem Internet darauf zugreifen zu
         können muss man nun noch Dynamische DNS einrichten, damit der Computer immer unter der selben Adresse erreichbar ist, auch wenn sich seinen IP-Adresse regelmäßig ändert.</p>
+
+    <div class="spacer layer2"></div>
+    <div class="spacer layer1"></div>
 
     <h2>Berechnen von Spacing-Ratios und Graphische Darstellung</h2>
     <p>In meiner Bachelorarbeit hab ich das Verhalten verschiedener Klassen von nicht-Hermiteschen Zufallsmatrizen untersucht. Dazu habe ich unter anderem die Eigenwerte berechnet und das Verhältnis aus nächst gelegenem Eigenwert zum übernächsten Eigenwert
@@ -63,6 +71,9 @@
         </div>
     </div>
 
+    <div class="spacer layer2"></div>
+    <div class="spacer layer1"></div>
+
     <h2>John Conway's Game of Life</h2>
     <p>Das Spiel des Lebens wurde vom Mathematiker John Conway entworfen. Es basiert auf zellulären Automaten, die hier durch die einzelnen Felder des Spielfeldes dargestellt werde. Jede Zelle kann genau zwei Zustände annehmen, nämlich tot oder lebendig.
         Die Spielregeln sind:
@@ -75,6 +86,7 @@
         Der Code für das Spiel mit tkinter GUI (graphical user interface) ist auf <a href="https://github.com/jonas31415/Game-of-Life" title="Code für Game of Life">GitHub</a> zu finden.
     </p>
     <img class="gameoflife" src="../images/gameoflife.PNG" alt="GameOfLife" style="width: 30%">
+    <div class="spacer layer2"></div>
 </body>
 
 </html>
